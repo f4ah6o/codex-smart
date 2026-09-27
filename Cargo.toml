@@ -1,0 +1,12 @@
+[package]
+name = "codex-smart"
+version = "0.1.0"
+edition = "2021"
+description = "Usage-aware launcher that routes Codex between OpenAI API complimentary tokens and a ChatGPT subscription"
+license = "MIT"
+repository = "https://github.com/f4ah6o/codex-smart"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+ureq = { version = "2.12", features = ["json"] }
+url = "2"
