@@ -417,7 +417,12 @@ fn env_u64(name: &str) -> Result<Option<u64>, String> {
 
 fn env_truthy(name: &str) -> bool {
     env::var(name)
-        .map(|value| matches!(value.to_ascii_lowercase().as_str(), "1" | "true" | "yes" | "on"))
+        .map(|value| {
+            matches!(
+                value.to_ascii_lowercase().as_str(),
+                "1" | "true" | "yes" | "on"
+            )
+        })
         .unwrap_or(false)
 }
 
