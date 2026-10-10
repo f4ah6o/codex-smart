@@ -2,6 +2,7 @@
 name = "codex-smart"
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.99"
 description = "Usage-aware launcher that routes Codex between OpenAI API complimentary tokens and a ChatGPT subscription"
 license = "MIT"
 repository = "https://github.com/f4ah6o/codex-smart"
